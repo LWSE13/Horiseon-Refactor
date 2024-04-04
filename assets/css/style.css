@@ -1,13 +1,17 @@
+/* Global selector that selects all elements. The box-sizing property is set to border-box. This means that padding and border are included in the element's total width 
+and height. It also resets the margin and padding of all elements to 0. */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
+/* The body selector sets the background color of the entire document. */
 body {
     background-color: #d9dcd6;
 }
 
+/* styles the header section of the document. It sets the padding, font-family, background color, and text color. */
 header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -15,15 +19,18 @@ header {
     color: #ffffff;
 }
 
+/*styles all level 1 headings. It sets the display property to inline-block, which allows the element to sit inline with other elements. It also sets the font size. */
 h1 {
     display: inline-block;
     font-size: 48px;
 }
 
+/* styles any element with class="seo". It sets the text color. */
 .seo {
     color: #d9dcd6;
 }
 
+/*styles the nav bar section of the document. It sets the padding-top, margin-right, float, font-family, and font-size. */
 nav {
     padding-top: 15px;
     margin-right: 20px;
@@ -31,24 +38,32 @@ nav {
     font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+
+/*styles all unordered lists. It sets the list-style-type to none, which removes the default bullet points. */
 ul {
     list-style-type: none;
 }
 
+/*styles all list items. It sets the display property to inline-block. It also sets the margin-left. */
 li {
     display: inline-block;
     margin-left: 25px;
 }
 
+/*styles all anchor links. It sets the text color and removes the default underline with text-decoration: none. */
 a {
     color: #ffffff;
     text-decoration: none;
 }
 
+/* styles all paragraphs. It sets the font size. */
 p {
     font-size: 16px;
 }
 
+/*styles the element with id="hero". It sets the height, width, margin-bottom, and background image. It also sets the background-size to cover, 
+which scales the background image to be as large as possible so that the background area is completely covered by the background image. 
+The background-position is set to center, which centers the background image. */
 #hero {
     height: 800px;
     width: 100%;
@@ -58,6 +73,7 @@ p {
     background-position: center;
 }
 
+/* these can be added to any element to make it float left or right. They also set the margin-right or margin-left. */
 .float-left {
     float: left;
     margin-right: 25px;
@@ -68,12 +84,14 @@ p {
     margin-left: 25px;
 }
 
+/*styles the element with id="content". It sets the width, display property to inline-block, and margin-left. */
 #content {
     width: 75%;
     display: inline-block;
     margin-left: 20px;
 }
 
+/* styles the element with id="benefits". It sets the margin-right, padding, clear, float, width, height, font-family, and background color. */
 #benefits {
     margin-right: 20px;
     padding: 20px;
@@ -85,24 +103,27 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-section
- {
+/*styles any element with class="benefit-section". It sets the margin-bottom and text color. */
+.benefit-section {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/*styles all level 3 headings. It sets the margin-bottom and text-align to center. */
 h3{
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-section img
- {
+/*styles any images within elements with class="benefit-section". It sets the display property to block, which forces a line break before and after the element. 
+It also sets the margin and max-width. */
+.benefit-section img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/*styles any element with class="content-section". It sets the margin-bottom, padding, height, font-family, background color, and text color. */
 .content-section {
     margin-bottom: 20px;
     padding: 50px;
@@ -112,15 +133,18 @@ h3{
     color: #ffffff;
 }
 
+/* sets the max-height. */
 .content-section img {
     max-height: 200px;
 }
 
+/*sets the margin-bottom and font-size. */
 .content-section h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
+/*sets the padding, clear, font-family, and text-align to center. */
 footer {
     padding: 30px;
     clear: both;
@@ -128,7 +152,7 @@ footer {
     text-align: center;
 }
 
+/*sets the font-size. */
 footer h2{
     font-size: 20px;
-    
 }
